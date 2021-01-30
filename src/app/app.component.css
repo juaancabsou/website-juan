@@ -26,4 +26,25 @@
     height: 44px;
     color: white;
     background-color: #0d1117;
+    border-radius: 2px;
+}
+
+.blink {
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+  }
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  
+#li-text-logo{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bold;
 }
