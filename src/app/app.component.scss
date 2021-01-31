@@ -38,13 +38,14 @@
 .nav-text {
   visibility: hidden;
   position: absolute;
-  transition-duration: 1s;
-  transition-property: opacity;
   height: 37.5px;
   display: flex;
   align-items: center;
   justify-content: center;
   opacity: 0;
+  letter-spacing: 1px;
+  transition-duration: 1s;
+  transition-property: opacity;
 }
 
 .nav-link:hover .nav-icon {
