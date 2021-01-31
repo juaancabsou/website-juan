@@ -125,5 +125,10 @@
       }
     }
   },
-  "defaultProject": "website-juan"
+  "defaultProject": "website-juan",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
