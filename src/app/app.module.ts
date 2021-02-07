@@ -4,15 +4,32 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { NavbarMenuComponent } from './navbar-menu/navbar-menu.component';
 import { HomeComponent } from './home/home.component';
+import { ContactComponent } from './contact/contact.component';
+import { RouterModule } from '@angular/router';
+import { ProfileComponent } from './profile/profile.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { PostsComponent } from './posts/posts.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarMenuComponent,
-    HomeComponent
+    HomeComponent,
+    ContactComponent,
+    ProfileComponent,
+    ProjectsComponent,
+    PostsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot([
+      {path: 'home', component: HomeComponent},
+      {path: 'profile', component: ProfileComponent},
+      {path: 'projects', component: ProjectsComponent},
+      {path: 'posts', component: PostsComponent},
+      {path: 'contact', component: ContactComponent},
+      {path: '', redirectTo: '/home', pathMatch: 'full'}
+    ]),
   ],
   providers: [],
   bootstrap: [AppComponent]
