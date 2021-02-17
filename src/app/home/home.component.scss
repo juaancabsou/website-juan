@@ -1,38 +1,85 @@
+$home-background: #1d1d1d;
+$letter-red: #fd1056;
+$letter-blue-light: #06fedb;
+$letter-orange: #fcbe40;
+
 .div-container{
     margin-left: 65px;
-}
-.div-main{
-    background-color: rebeccapurple;
+    background-color: $home-background;
     height: 100vh;
     width: 100%;
 }
 
-.div-main-1{
-    background-color: rebeccapurple;
-}
-.div-main-2{
-    background-color: gray;
-}
-
-.div-main-3{
-    background-color: red;
-}
-.div-main-4{
-    background-color: yellow;
-}
-
-.div-main-5{
-    background-color: #BFBFBF;
+.div-home-header{
+    height: 10vh;
+    display: flex;
+    align-items: center;
 }
 
 .title-p{
-    font-size: 60px;
+    color: white;
+    font-family: 'Verdana';
+    letter-spacing: 2px;
+    margin-bottom: 0px !important; 
+    margin-left: 20px;
+    font-size: 25px;
 }
 
-/* SPECIFIC SECTION CONTAINERS */
+.letter-1{
+    color: $letter-red;
+    font-weight: bold;
+    font-size: 30px; 
+}
 
-#div-contact{
+.letter-last{
+    color: $letter-blue-light;
+    font-weight: bold;
+    font-size: 30px; 
+}
+
+
+.div-home-body{
+    height: 80vh;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
+
+.title-body-p{
+    display: block;
+    color: white;
+    font-family: 'Verdana';
+    letter-spacing: 2px;
+    margin-bottom: 0px !important; 
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+.highlight-1{
+    font-weight: bold;
+    color: $letter-orange;
+    font-family: Quicksand;
+}
+
+.highlight-2{
+    font-weight: bold;
+    color: $letter-blue-light;
+    font-family: Quicksand;
+}
+
+
+/*------------- BLINKING ------------*/
+.blink {
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+  }
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
