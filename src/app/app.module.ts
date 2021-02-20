@@ -9,6 +9,8 @@ import { RouterModule } from '@angular/router';
 import { ProfileComponent } from './profile/profile.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { PostsComponent } from './posts/posts.component';
+import { ExperienceComponent } from './experience/experience.component';
+import { EducationComponent } from './education/education.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { PostsComponent } from './posts/posts.component';
     ContactComponent,
     ProfileComponent,
     ProjectsComponent,
-    PostsComponent
+    PostsComponent,
+    ExperienceComponent,
+    EducationComponent
   ],
   imports: [
     BrowserModule,
