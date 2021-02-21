@@ -1,0 +1,26 @@
+#experience-timeline{
+    justify-content: space-around;
+}
+.timeline-box{
+    display: flex;
+    justify-content: center;
+    align-items: revert;
+    height: 65px;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.timeline-line{
+    display: flex;
+    justify-content: center;
+    align-items: revert;
+    height: 65px;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+
+.timeline-box-text{
+    margin: 0px !important;
+}

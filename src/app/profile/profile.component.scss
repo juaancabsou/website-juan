@@ -4,6 +4,9 @@ $letter-red: #fd1056;
 $letter-blue-light: #06fedb;
 $letter-orange: #fcbe40;
 
+$div-home-body-container-height: 80vh;
+$div-home-body-container-padding: 10px;
+
 .div-container{
     margin-left: 65px;
     background-color: $home-background;
@@ -44,11 +47,24 @@ $letter-orange: #fcbe40;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 20px;
+
 }
 
-.div-home-body-container{
-    width: 80%;
-    height: 80vh;
-    background-color: palevioletred;
+
+@media (min-width:1290px){
+    .div-home-body-container{
+        width: 80%;
+        height: $div-home-body-container-height;
+        background-color: palevioletred;
+        padding: $div-home-body-container-padding;
+    }
+}
+
+@media (max-width: 1290px){
+    .div-home-body-container{
+        width: 100%;
+        height: $div-home-body-container-height;
+        background-color: palevioletred;
+        padding: $div-home-body-container-padding;
+    }
 }
